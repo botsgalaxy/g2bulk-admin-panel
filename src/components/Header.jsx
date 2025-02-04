@@ -20,21 +20,19 @@ export default function Header({ toggleSidebar }) {
     <header>
       <div className="header-container">
         <div className="logo">
-          <a href="/">
-            LOGO
-          </a>
+          <a href="/">LOGO</a>
         </div>
 
         <div className="toggle-nav" id="toggle-nav" onClick={toggleSidebar}>
           <i className="bx bx-menu"></i>
         </div>
 
-        <div className="search-bar">
-          <div className="search-box">
-            <div className="search-icon">
+        <div className="header-search-bar">
+          <div className="header-search-box">
+            <div className="header-search-icon">
               <i className="bx bx-search"></i>
             </div>
-            <div className="search-input">
+            <div className="header-search-input">
               <input
                 ref={searchRef}
                 type="text"
@@ -42,7 +40,7 @@ export default function Header({ toggleSidebar }) {
                 id="search-terms"
               />
             </div>
-            <div className="search-shortcut">
+            <div className="header-search-shortcut">
               <p>Ctrl K</p>
             </div>
           </div>

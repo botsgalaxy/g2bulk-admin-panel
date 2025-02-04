@@ -7,6 +7,7 @@ import Users from "./pages/Users";
 import Orders from "./pages/Orders";
 import Inventory from "./pages/Inventory";
 import Products from "./pages/Products";
+import Home from "./pages/Home";
 
 export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -26,6 +27,7 @@ export default function App() {
         <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
         <div className="content" id="content">
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route
               path="/products"
               element={<Products categories={categories} />}
